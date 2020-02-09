@@ -1,0 +1,12 @@
+node_modules/
+deploy/
+css/
+js/
+scss/
+tmp/
+.travis.yml
+Dockerfile
+docker-compose.yml
+gulpfile.js
+package-lock.json
+package.json
