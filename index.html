@@ -13,7 +13,7 @@
   <link rel="manifest" href="/manifest.json">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="TBSS PWA">
+  <meta name="apple-mobile-web-app-title" content="TBS PWA">
   <meta name="theme-color" content="#003366">
   <link rel="apple-touch-icon" href="/images/wizard-192.png">
 
@@ -24,377 +24,401 @@
 
 <body id="page-top">
 
-  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+  <div class="background"></div>
+
+  <nav id="tbs-navbar" class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
     <a class="navbar-brand" href="#page-top">
       <img class="d-inline-block align-top rounded-circle" src="images/profile.jpg" width="30" height="30" alt="">
       Dr. Schröder
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#tbs-navbar-content"
+      aria-controls="tbs-navbar-content" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse" id="tbs-navbar-content">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger zoom" href="#about" aria-label="About">About</a>
+          <a class="nav-link" href="#about" aria-label="About">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger zoom" href="#experience" aria-label="Experience">Experience</a>
+          <a class="nav-link" href="#experience" aria-label="Experience">Experience</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger zoom" href="#publications" aria-label="Publications">Publications</a>
+          <a class="nav-link" href="#publications" aria-label="Publications">Publications</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger zoom" href="#talks" aria-label="Talks">Talks</a>
+          <a class="nav-link" href="#talks" aria-label="Talks">Talks</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger zoom" href="#skills" aria-label="Skills">Skills</a>
+          <a class="nav-link" href="#skills" aria-label="Skills">Skills</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger zoom" href="#certifications"
-            aria-label="Certifications">Certifications</a>
+          <a class="nav-link" href="#certifications" aria-label="Certifications">Certifications</a>
         </li>
       </ul>
     </div>
   </nav>
 
-  <div class="container" id="about">
-    <div class="row justify-content-center">
-      <div class="col-10 white-bg">
-        <div class="row">
-          <div class="col-4">
-            <img class="img-fluid img-profile" src="images/profile.jpg" alt="" />
+  <div data-spy="scroll" data-target="#tbs-navbar" data-offset="0">
 
-            <ul class="list-inline text-center">
-              <li class="list-inline-item">
-                <a href="public/PSPOI.pdf" target="_blank"><img class="scrum" src="images/pspo.svg"></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="public/PSMI.pdf" target="_blank"><img class="scrum" src="images/psm.svg"></a>
-              </li>
-            </ul>
-          </div>
-          <br>
-          <div class="col-8">
-            <span class="speech-bubble">Hello</span>
-            <h1 class="display-5">I'm Dr. Tobias Schröder</h1>
-            <h6>(Dr. rer. nat. , née Krauthoff)</h6>
-            <h4 class="date">Product Owner &bull; Developer &bull; Conference Speaker
-            </h4>
-            <hr>
-            <p>Since the beginning of 2020 I switched my role to that of a Product Owner after having
-              more than five years of experience as professional full stack developer. After finishing
-              my academic career with a PhD in dialog-based online argumentation, I decided to join
-              METRONOM in the mid of 2018. Since then I am pushing my colleagues and myself further!
-              In my spare time I love to write Clojure, standing in front of my barbecue or lifting
-              some dumbbells. </p>
-          </div>
-        </div>
-        <div class="alert alert-custom text-center">
+    <div class="container" id="about">
+      <div class="row justify-content-center">
+        <div class="col-10 white-bg">
           <div class="row">
-            <div class="col-12">
-              <ul class="list-inline">
+            <div class="col-4">
+              <img class="img-fluid img-profile" src="images/profile.jpg" alt="" />
+
+              <ul class="list-inline text-center">
                 <li class="list-inline-item">
-                  <a title="Twitter" rel="noreferrer" href="https://twitter.com/tbsschroeder" target="_blank">
-                    <span class="fa-stack fa-lg">
-                      <i class="fab fa-twitter fa-inverse"></i>
-                    </span>
-                  </a>
+                  <a href="public/PSPOI.pdf" target="_blank"><img class="scrum" src="images/pspo.svg"></a>
                 </li>
                 <li class="list-inline-item">
-                  <a title="LinkedIn" rel="noreferrer"
-                    href="https://www.linkedin.com/in/dr-tobias-schr%C3%B6der-8882a382" target="_blank">
-                    <span class="fa-stack fa-lg">
-                      <i class="fab fa-linkedin fa-inverse"></i>
-                    </span>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a title="Xing" rel="noreferrer" href="https://www.xing.com/profile/Tobias_Schroeder121"
-                    target="_blank">
-                    <span class="fa-stack fa-lg">
-                      <i class="fab fa-xing fa-inverse"></i>
-                    </span>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a title="Github" rel="noreferrer" href="https://github.com/tbsschroeder" target="_blank">
-                    <span class="fa-stack fa-lg">
-                      <i class="fab fa-github fa-inverse"></i>
-                    </span>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a title="University" rel="noreferrer"
-                    href="https://www.tsn.hhu.de/ourgroup/alumni/tobias-krauthoff.html" target="_blank">
-                    <span class="fa-stack fa-lg">
-                      <i class="fa fa-university fa-inverse"></i>
-                    </span>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a title="Publications" rel="noreferrer"
-                    href="https://scholar.google.de/citations?user=jq-324u792QC&hl=de&oi=ao" target="_blank">
-                    <span class="fa-stack fa-lg">
-                      <i class="fa fa-book fa-inverse"></i>
-                    </span>
-                  </a>
+                  <a href="public/PSMI.pdf" target="_blank"><img class="scrum" src="images/psm.svg"></a>
                 </li>
               </ul>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="experience" class="container">
-    <div class="row justify-content-center">
-      <div class="col-12">
-        <h1 class="text-center">Experience &amp; Education</h1>
-        <div class="timeline">
-
-          <div class="tl-container left" data-aos="fade-right">
-            <div class="content">
-              <p class="date text-center">Feb 2020 - now</p>
-              <a class="text-center" href="https://www.metronom.com/" target="_blank">
-                <img class="img-metronom" src="images/metronom.png">
-              </a>
-              <h6 class="text-center title">Product Owner</h6>
-              <p>In my engineering role I noticed that talking to stakeholders is very important for a product.
-                Therefore I took the possibility to change to change my role of responsibility. Now I am the product
-                owner role for the Own Business Day Hub, where we support all independent entrepreneurs in driving their
-                business forward. This product is now live in more than 25 countries worldwide.<p>
+            <br>
+            <div class="col-8">
+              <span class="speech-bubble">Hello</span>
+              <h1 class="name">I'm Dr. Tobias Schröder</h1>
+              <h6>(Dr. rer. nat. , née Krauthoff)</h6>
+              <h4 class="date">Product Owner &bull; Developer &bull; Conference Speaker
+              </h4>
+              <hr>
+              <p>After having more than five years of experience as professional full stack developer, I became a
+                Product Owner since the beginning of 2020. After finishing my academic career with a PhD in dialog-based
+                online argumentation, I decided to join METRONOM in the mid of 2018. Since then I am pushing my
+                colleagues and myself further! In my spare time I love to write Clojure, standing in front of my
+                barbecue or lifting some dumbbells. </p>
             </div>
           </div>
-
-          <div class="tl-container right" data-aos="fade-left">
-            <div class="content">
-              <p class="date text-center">Jul 2018 - Jan 2020</p>
-              <a class="text-center" href="https://www.metronom.com/" target="_blank">
-                <img class="img-metronom" src="images/metronom.png">
-              </a>
-              <h6 class="text-center title">Full Stack Developer</h6>
-              <p>After I finished my PhD, I started as a passionate Full Stack Developer at METRONOM, the internal
-                product company of the METRO AG. In my everyday job I design and implement software, plan software,
-                talk to stakeholders and the business, do interviews for new colleagues, etc.</p>
-            </div>
-          </div>
-
-          <div class="tl-container left" data-aos="fade-right">
-            <div class="content">
-              <p class="date text-center">Dec 2014 - Jun 2018</p>
-              <a class="text-center" href="https://hhu.de/" target="_blank">
-                <img class="img-hhu" src="images/hhu.png">
-              </a>
-              <h6 class="text-center title">Research Assistant & Phd Student</h6>
-              <p>During my PhD I was a member of the <a rel="noreferrer" href="https://www.fortschrittskolleg.de/en/"
-                  target="_blank">PhD programme "Online Participation"</a> as well as a board member of the <a
-                  rel="noreferrer" href="https://diid.hhu.de/en/" target="_blank">Düsseldorf Institute for Internet and
-                  Democracy</a>. My thesis was about "Dialog-Based Online Argumentation" - that's a novel prototype for
-                bringing structured offline discussions into the web. Thats was the start of my career as a full stack
-                developer. I defended my thesis with <i>magna cum laude</i> in January of 2018.</p>
-            </div>
-          </div>
-
-          <div class="tl-container right" data-aos="fade-left">
-            <div class="content">
-              <p class="date text-center">Oct 2012 - Nov 2014</p>
-              <a class="text-center" href="https://hhu.de/" target="_blank">
-                <img class="img-hhu" src="images/hhu.png">
-              </a>
-              <h6 class="text-center title">Master of Science Degree in Computer Science</h6>
-              <p>I finished my Masters Degree with an average degree of 1.1 in December of 2014. My focus was on
-                computer networks, network security, mobile communications as well as peer-to-peer networks. This was
-                also a reason way I got the job for the gematik service. In my Masters thesis I implemented and tested
-                an algorithm for the measuring the end-to-end throughput capacity of mobile networks without having any
-                information from the providers as well as without so called self-induced congestions.</p>
-            </div>
-          </div>
-
-          <div class="tl-container left" data-aos="fade-right">
-            <div class="content">
-              <p class="date text-center">Dec 2013</p>
-              <a class="text-center" href="https://n-design.de/" target="_blank">
-                <img class="img-ndesign" src="images/ndesign.png">
-              </a>
-              <h6 class="text-center title">Freelancer</h6>
-              <p>During my studies I wanted - like every student - increase my pocket money. Thanks to one of my
-                tutoring students I had the possiblity to design and implement a prototype for a gematik
-                specification-compliant access service. Gematik lays the foundation for a secure data network with the
-                telematics infrastructure and the introduction of the electronic health card in Germany. </p>
+          <div class="alert alert-custom text-center">
+            <div class="row">
+              <div class="col-12">
+                <ul class="list-inline">
+                  <li class="list-inline-item">
+                    <a title="Twitter" rel="noreferrer" href="https://twitter.com/tbsschroeder" target="_blank">
+                      <span class="fa-stack fa-lg">
+                        <i class="fab fa-twitter fa-inverse"></i>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a title="LinkedIn" rel="noreferrer"
+                      href="https://www.linkedin.com/in/dr-tobias-schr%C3%B6der-8882a382" target="_blank">
+                      <span class="fa-stack fa-lg">
+                        <i class="fab fa-linkedin fa-inverse"></i>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a title="Xing" rel="noreferrer" href="https://www.xing.com/profile/Tobias_Schroeder121"
+                      target="_blank">
+                      <span class="fa-stack fa-lg">
+                        <i class="fab fa-xing fa-inverse"></i>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a title="Github" rel="noreferrer" href="https://github.com/tbsschroeder" target="_blank">
+                      <span class="fa-stack fa-lg">
+                        <i class="fab fa-github fa-inverse"></i>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a title="University" rel="noreferrer"
+                      href="https://www.tsn.hhu.de/ourgroup/alumni/tobias-krauthoff.html" target="_blank">
+                      <span class="fa-stack fa-lg">
+                        <i class="fa fa-university fa-inverse"></i>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a title="Publications" rel="noreferrer"
+                      href="https://scholar.google.de/citations?user=jq-324u792QC&hl=de&oi=ao" target="_blank">
+                      <span class="fa-stack fa-lg">
+                        <i class="fa fa-book fa-inverse"></i>
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div id="publications" class="container white-bg" data-aos="fade-up">
-    <div class="row justify-content-center">
-      <div class="col-12">
-        <h2 class="text-center">Publications</h2>
-        <div class="content">
-          <div data-aos="fade-up">
-            <h5>Thesis</h5>
-            <ul>
-              <li>
-                Krauthoff (2018):
-                <a rel="noreferrer" href="https://www.tsn.hhu.de/publikationen.html?publication=Krauthoff2018a"
-                  target="_blank">Dialog-Based Online Argumentation</a> at the Heinrich Heine University Düsseldorf,
-                Germany - Phd Thesis
-              </li>
-              <li>
-                Krauthoff (2014):
-                <a rel="noreferrer" href="https://www.tsn.hhu.de/publikationen.html?publication=Krauthoff2014a"
-                  target="_blank">Measurement of Position-based Network-Characteristics in Cellular Networks while
-                  Moving</a> at the Department of Computer Science, Heinrich Heine University Düsseldorf - Master's
-                thesis
-              </li>
-              <li>
-                Krauthoff (2012):
-                <a rel="noreferrer" href="https://www.tsn.hhu.de/publikationen.html?publication=Krauthoff2012a"
-                  target="_blank">Eine Android App für alltägliche Studieninformationen am Beispiel der
-                  Heinrich-Heine-Universität Düsseldorf</a> at the Department of Computer Science, Heinrich Heine
-                University Düsseldorf - Bachelor's thesis
-              </li>
-            </ul>
-          </div>
+    <div id="experience" class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <h1 class="text-center">Experience &amp; Education</h1>
+          <div class="timeline">
 
-          <div data-aos="fade-up">
-            <h5>Scientific Papers & Articles</h5>
-            <ul>
-              <li>
-                Krauthoff, Meter, Betz, Baurmann, Mauve (2018):
-                <a rel="noreferrer" href="https://www.tsn.hhu.de/publikationen.html?publication=Krauthoff2018b"
-                  target="_blank">D-BAS – A Dialog-Based Online Argumentation System</a>, published in Computational
-                Models of Argument
-              </li>
-              <li>
-                Meter, Krauthoff, Schneider (2018):
-                <a rel="noreferrer" href="https://www.tsn.hhu.de/publikationen.html?publication=Meter2018b"
-                  target="_blank">Dialogbasierte Online-Diskussionen</a>, published in Deutsche Verwaltungspraxis
-              </li>
-              <li>
-                Krauthoff, Meter, Mauve (2017):
-                <a rel="noreferrer" href="https://www.tsn.hhu.de/publikationen.html?publication=Krauthoff2017a"
-                  target="_blank">Dialog-Based Online Argumentation: Findings from a Field Experiment</a>, published in
-                Proceedings of the 1st Workshop on Advances in Argumentation in Artificial Intelligence
-              </li>
-              <li>
-                Meter, Krauthoff, Mauve (2017):
-                <a rel="noreferrer" href="https://www.tsn.hhu.de/publikationen.html?publication=Meter2017a"
-                  target="_blank">discuss: Embedding Dialog-Based Discussions into Websites</a>, published in Learning
-                and Collaboration Technologies. Technology in Education
-              </li>
-              <li>
-                Meter, Krauthoff, Mauve (2016):
-                <a rel="noreferrer" href="https://www.tsn.hhu.de/publikationen.html?publication=Meter2016a"
-                  target="_blank">Extended Abstract - discuss: Embedding dialog-based Discussions into Websites</a>,
-                published in HCI International 2017 - Social Computing for Social Change
-              </li>
-              <li>
-                Krauthoff, Betz, Baurmann, Mauve (2016):
-                <a rel="noreferrer" href="https://www.tsn.hhu.de/publikationen.html?publication=Krauthoff2016b"
-                  target="_blank">Dialog-Based Online Argumentation</a>, published in Computational Models of Argument
-              </li>
-              <li>
-                Goebel, Krauthoff, Mauve, Graffi (2016):
-                <a rel="noreferrer" href="https://www.tsn.hhu.de/publikationen.html?publication=Goebel2016b"
-                  target="_blank">Moving Measurements: Measuring Network Characteristics of Mobile Cellular Networks on
-                  the Move</a>, published in Computer Communications
-              </li>
-            </ul>
-          </div>
+            <div class="tl-container left" data-aos="fade-right">
+              <div class="content">
+                <p class="date text-center">Feb 2020 - now</p>
+                <a class="text-center" href="https://www.metronom.com/" target="_blank">
+                  <img class="img-metronom" src="images/metronom.png">
+                </a>
+                <h6 class="text-center title">Product Owner</h6>
+                <p>In my engineering role I noticed that talking to stakeholders and increasing the products value day
+                  by day is very important for a product. Therefore I took the possibility to change my role of
+                  responsibility. Now I am the product owner for the Own Business Day Hub, where we support all
+                  independent entrepreneurs in driving their business forward. This product is now live in more than 20
+                  countries worldwide.<p>
+              </div>
+            </div>
 
-          <div data-aos="fade-up">
-            <h5>Blogs</h5>
-            <ul>
-              <li>2019/07/31 - METRONOM: <a rel="noreferrer"
-                  href="https://www.metronom.com/blog/2019/07/31/How-to-Introduce-New-Technologies-in-a-Production-Environment"
-                  target="_blank">How to Introduce New Technologies in a Production Environment</a></li>
-              <li>2019/06/05 - METRONOM: <a rel="noreferrer"
-                  href="https://www.metronom.com/blog/2019/06/05/Us-caching–fortheSakeoftheUsers" target="_blank">Use
-                  caching – for the Sake of the Users</a></li>
-              <li>2019/04/30 - METRONOM: <a rel="noreferrer"
-                  href="https://www.metronom.com/blog/2019/04/30/A_Day_in_the_Life_of_a_Software_Developer"
-                  target="_blank">A Day in the Life of a Software Developer</a></li>
-              <li>2019/02/14 - METRONOM: <a rel="noreferrer"
-                  href="https://www.metronom.com/blog/2019/02/14/Straight-from-University-into-an-Agile-Environment"
-                  target="_blank">Straight from University into an Agile Environment</a></li>
-            </ul>
+            <div class="tl-container right" data-aos="fade-left">
+              <div class="content">
+                <p class="date text-center">Jul 2018 - Jan 2020</p>
+                <a class="text-center" href="https://www.metronom.com/" target="_blank">
+                  <img class="img-metronom" src="images/metronom.png">
+                </a>
+                <h6 class="text-center title">Full Stack Developer</h6>
+                <p>After I finished my PhD, I started as a passionate full stack developer at METRONOM, the internal
+                  product service company of the METRO AG. In my everyday job I designed and implemented software,
+                  talked to stakeholders and the business experts. Also I participated in interviews for new colleagues,
+                  etc.</p>
+              </div>
+            </div>
+
+            <div class="tl-container left" data-aos="fade-right">
+              <div class="content">
+                <p class="date text-center">Dec 2014 - Jun 2018</p>
+                <a class="text-center" href="https://hhu.de/" target="_blank">
+                  <img class="img-hhu" src="images/hhu.png">
+                </a>
+                <h6 class="text-center title">Research Assistant & Phd Student</h6>
+                <p>During my PhD I was a member of the <a rel="noreferrer" href="https://www.fortschrittskolleg.de/en/"
+                    target="_blank">PhD programme "Online Participation"</a> as well as a board member of the <a
+                    rel="noreferrer" href="https://diid.hhu.de/en/" target="_blank">Düsseldorf Institute for Internet
+                    and
+                    Democracy</a>. My thesis was about "Dialog-Based Online Argumentation" - that's a novel prototype
+                  for
+                  bringing structured offline discussions into the web. Thats was the start of my career as a full stack
+                  developer. I defended my thesis with <i>magna cum laude</i> in January of 2018.</p>
+              </div>
+            </div>
+
+            <div class="tl-container right" data-aos="fade-left">
+              <div class="content">
+                <p class="date text-center">Oct 2012 - Nov 2014</p>
+                <a class="text-center" href="https://hhu.de/" target="_blank">
+                  <img class="img-hhu" src="images/hhu.png">
+                </a>
+                <h6 class="text-center title">Master of Science Degree in Computer Science</h6>
+                <p>I finished my Masters Degree with an average degree of 1.1 in December of 2014. My focus was on
+                  computer networks, network security, mobile communications as well as peer-to-peer networks. This was
+                  also a reason way I got the job for the gematik service. In my Masters thesis I implemented and tested
+                  an algorithm for the measuring the end-to-end throughput capacity of mobile networks without having
+                  any
+                  information from the providers as well as without so called self-induced congestions.</p>
+              </div>
+            </div>
+
+            <div class="tl-container left" data-aos="fade-right">
+              <div class="content">
+                <p class="date text-center">Dec 2013</p>
+                <a class="text-center" href="https://n-design.de/" target="_blank">
+                  <img class="img-ndesign" src="images/ndesign.png">
+                </a>
+                <h6 class="text-center title">Freelancer</h6>
+                <p>During my studies I wanted - like every student - increase my pocket money. Thanks to one of my
+                  tutoring students I had the possiblity to design and implement a prototype for a gematik
+                  specification-compliant access service. Gematik lays the foundation for a secure data network with the
+                  telematics infrastructure and the introduction of the electronic health card in Germany. </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div id="talks" class="container white-bg" data-aos="fade-up">
-    <div class="row justify-content-center">
-      <div class="col-12">
-        <h2 class="text-center">Talks</h2>
-        <div class="content">
-          <div data-aos="fade-up">
-            <h5>Business</h5>
-            <ul>
-              <li>2020/05 - WeAreDevelopers Conference Berlin: <a href="#" target="_blank">TBA</a></li>
-              <li>2020/05 - DevDays Europe 2020 Vilnius: <a rel="noreferrer"
-                  href="https://tbsschroeder.github.io/using-clojure-for-web-apps/#/" target="_blank">No Pain no Gain:
-                  Using Clojure for Web Applications</a></li>
-              <li>2020/04 - SEAC Days Munich: <a rel="noreferrer"
-                  href="https://tbsschroeder.github.io/using-clojure-for-web-apps/#/" target="_blank">No Pain no Gain:
-                  Using Clojure for Web Applications</a></li>
-              <li>2020/03 - Javaland Brühl: <a rel="noreferrer"
-                  href="https://tbsschroeder.github.io/using-clojure-for-web-apps/#/" target="_blank">No Pain no Gain:
-                  Using Clojure for Web Applications</a></li>
-              <li>2019/11 - WeAreDevelopers Congress Vienna: <a rel="noreferrer"
-                  href="https://tbsschroeder.github.io/how-we-almost-delivered-100t" target="_blank">How we almost
-                  delivered 100t of Stracciatella Mousse</a></li>
-              <li>2019/10 - Code.Talks Hamburg: <a rel="noreferrer"
-                  href="https://tbsschroeder.github.io/using-clojure-for-web-apps/#/" target="_blank">No Pain no Gain:
-                  Using Clojure for Web Applications</a>, Video on <a rel="noreferrer"
-                  href="https://www.youtube.com/watch?v=dzGuaO38XDw" target="_blank">YouTube</a></li>
-              <li>2019/10 - People + Tech Düsseldorf Meetup: <a rel="noreferrer"
-                  href="https://tbsschroeder.github.io/dive-deep-into-argumentation-theory/#/">Dive Deep into
-                  Argumentation Theory</a></li>
-              <li>2019/04 - People + Tech Düsseldorf Meetup: <a rel="noreferrer"
-                  href="https://tbsschroeder.github.io/about-the-efficency-of-online-discussions" target="_blank">About
-                  the Efficency of Online Discussions</a></li>
-              <li>2018/10 - Code.Talks Hamburg: <a rel="noreferrer"
-                  href="https://tbsschroeder.github.io/dive-deep-into-argumentation-theory/#/">Dive Deep into
-                  Argumentation Theory</a></li>
-            </ul>
-          </div>
+    <div id="publications" class="container white-bg" data-aos="fade-up">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <h2 class="text-center">Publications</h2>
+          <div class="content">
+            <div class="row">
+              <div class="col-6" data-aos="fade-right">
+                <div>
+                  <h5>Thesis</h5>
+                  <ul>
+                    <li>
+                      Krauthoff (2018):
+                      <a rel="noreferrer" href="https://www.tsn.hhu.de/publikationen.html?publication=Krauthoff2018a"
+                        target="_blank">Dialog-Based Online Argumentation</a> at the Heinrich Heine University
+                      Düsseldorf,
+                      Germany - Phd Thesis
+                    </li>
+                    <li>
+                      Krauthoff (2014):
+                      <a rel="noreferrer" href="https://www.tsn.hhu.de/publikationen.html?publication=Krauthoff2014a"
+                        target="_blank">Measurement of Position-based Network-Characteristics in Cellular Networks while
+                        Moving</a> at the Department of Computer Science, Heinrich Heine University Düsseldorf -
+                      Master's
+                      thesis
+                    </li>
+                    <li>
+                      Krauthoff (2012):
+                      <a rel="noreferrer" href="https://www.tsn.hhu.de/publikationen.html?publication=Krauthoff2012a"
+                        target="_blank">Eine Android App für alltägliche Studieninformationen am Beispiel der
+                        Heinrich-Heine-Universität Düsseldorf</a> at the Department of Computer Science, Heinrich Heine
+                      University Düsseldorf - Bachelor's thesis
+                    </li>
+                  </ul>
+                </div>
 
-          <div data-aos="fade-up">
-            <h5>Academia</h5>
-            <ul>
-              <li>
-                2018/08 - 7th International Conference on Computational Models of Argument (<a rel="noreferrer"
-                  href="http://comma2018.argdiap.pl/" target="_blank">COMMA 2018</a>): <a
-                  href="/public/2017_09_gummersbach.pdf" target="_blank">Dialog-Based Online Argumentation</a>
-              </li>
-              <li>
-                2017/11 - Advances In Argumentation In Artificial Intelligence (<a rel="noreferrer"
-                  href="http://aiia2017.di.uniba.it/ai3-2017/" target="_blank">AI&#179; 2017</a>): <a
-                  href="/public/2017_11_bari_ai3.pdf" target="_blank">Dialog-Based Online Argumentation: Findings from a
-                  Field Experiment</a>
-              </li>
-              <li>
-                2017/09 - New ideas for citizen’s involvement on a local level (<a rel="noreferrer"
-                  href="https://www.freiheit.org/buero/theodor-heuss-akademie" _target="blank">Theodor-Heuss-Akademie
-                  der Friedrich-Naumann-Stiftung für die Freiheit</a>):
-                <a href="/public/2018_09_warschau_comma18.pdf" target="_blank">New ideas for citizens’ involvement on
-                  local level Perspectives of Open Government in Germany</a>
-              </li>
-              <li>
-                2016/09 - 6th International Conference on Computational Models of Argument (<a rel="noreferrer"
-                  href="http://www.ling.uni-potsdam.de/comma2016/" target="_blank">COMMA 2016</a>): <a
-                  href="/public/2016_09_potsdam_comma16.pdf" target="_blank">Dialog-Based Online Argumentation</a>
-              </li>
-            </ul>
+                <div>
+                  <h5>Blogs</h5>
+                  <ul>
+                    <li>2019/07/31 - METRONOM: <a rel="noreferrer"
+                        href="https://www.metronom.com/blog/2019/07/31/How-to-Introduce-New-Technologies-in-a-Production-Environment"
+                        target="_blank">How to Introduce New Technologies in a Production Environment</a></li>
+                    <li>2019/06/05 - METRONOM: <a rel="noreferrer"
+                        href="https://www.metronom.com/blog/2019/06/05/Us-caching–fortheSakeoftheUsers"
+                        target="_blank">Use
+                        caching – for the Sake of the Users</a></li>
+                    <li>2019/04/30 - METRONOM: <a rel="noreferrer"
+                        href="https://www.metronom.com/blog/2019/04/30/A_Day_in_the_Life_of_a_Software_Developer"
+                        target="_blank">A Day in the Life of a Software Developer</a></li>
+                    <li>2019/02/14 - METRONOM: <a rel="noreferrer"
+                        href="https://www.metronom.com/blog/2019/02/14/Straight-from-University-into-an-Agile-Environment"
+                        target="_blank">Straight from University into an Agile Environment</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-6">
+                <div data-aos="fade-left">
+                  <h5>Scientific Papers & Articles</h5>
+                  <ul>
+                    <li>
+                      Krauthoff, Meter, Betz, Baurmann, Mauve (2018):
+                      <a rel="noreferrer" href="https://www.tsn.hhu.de/publikationen.html?publication=Krauthoff2018b"
+                        target="_blank">D-BAS – A Dialog-Based Online Argumentation System</a>, published in
+                      Computational
+                      Models of Argument
+                    </li>
+                    <li>
+                      Meter, Krauthoff, Schneider (2018):
+                      <a rel="noreferrer" href="https://www.tsn.hhu.de/publikationen.html?publication=Meter2018b"
+                        target="_blank">Dialogbasierte Online-Diskussionen</a>, published in Deutsche Verwaltungspraxis
+                    </li>
+                    <li>
+                      Krauthoff, Meter, Mauve (2017):
+                      <a rel="noreferrer" href="https://www.tsn.hhu.de/publikationen.html?publication=Krauthoff2017a"
+                        target="_blank">Dialog-Based Online Argumentation: Findings from a Field Experiment</a>,
+                      published
+                      in
+                      Proceedings of the 1st Workshop on Advances in Argumentation in Artificial Intelligence
+                    </li>
+                    <li>
+                      Meter, Krauthoff, Mauve (2017):
+                      <a rel="noreferrer" href="https://www.tsn.hhu.de/publikationen.html?publication=Meter2017a"
+                        target="_blank">discuss: Embedding Dialog-Based Discussions into Websites</a>, published in
+                      Learning
+                      and Collaboration Technologies. Technology in Education
+                    </li>
+                    <li>
+                      Meter, Krauthoff, Mauve (2016):
+                      <a rel="noreferrer" href="https://www.tsn.hhu.de/publikationen.html?publication=Meter2016a"
+                        target="_blank">Extended Abstract - discuss: Embedding dialog-based Discussions into
+                        Websites</a>,
+                      published in HCI International 2017 - Social Computing for Social Change
+                    </li>
+                    <li>
+                      Krauthoff, Betz, Baurmann, Mauve (2016):
+                      <a rel="noreferrer" href="https://www.tsn.hhu.de/publikationen.html?publication=Krauthoff2016b"
+                        target="_blank">Dialog-Based Online Argumentation</a>, published in Computational Models of
+                      Argument
+                    </li>
+                    <li>
+                      Goebel, Krauthoff, Mauve, Graffi (2016):
+                      <a rel="noreferrer" href="https://www.tsn.hhu.de/publikationen.html?publication=Goebel2016b"
+                        target="_blank">Moving Measurements: Measuring Network Characteristics of Mobile Cellular
+                        Networks
+                        on
+                        the Move</a>, published in Computer Communications
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+
           </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="talks" class="container white-bg" data-aos="fade-up">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <h2 class="text-center">Talks</h2>
+        </div>
+        <div class="col-6" data-aos="fade-right">
+          <h5>Business</h5>
+          <ul>
+            <li>2020/05 - WeAreDevelopers Conference Berlin: <a href="#" target="_blank">TBA</a></li>
+            <li>2020/05 - DevDays Europe 2020 Vilnius: <a rel="noreferrer"
+                href="https://tbsschroeder.github.io/using-clojure-for-web-apps/#/" target="_blank">No Pain no Gain:
+                Using Clojure for Web Applications</a></li>
+            <li>2020/04 - SEAC Days Munich: <a rel="noreferrer"
+                href="https://tbsschroeder.github.io/using-clojure-for-web-apps/#/" target="_blank">No Pain no Gain:
+                Using Clojure for Web Applications</a></li>
+            <li>2020/03 - Javaland Brühl: <a rel="noreferrer"
+                href="https://tbsschroeder.github.io/using-clojure-for-web-apps/#/" target="_blank">No Pain no Gain:
+                Using Clojure for Web Applications</a></li>
+            <li>2019/11 - WeAreDevelopers Congress Vienna: <a rel="noreferrer"
+                href="https://tbsschroeder.github.io/how-we-almost-delivered-100t" target="_blank">How we almost
+                delivered 100t of Stracciatella Mousse</a></li>
+            <li>2019/10 - Code.Talks Hamburg: <a rel="noreferrer"
+                href="https://tbsschroeder.github.io/using-clojure-for-web-apps/#/" target="_blank">No Pain no Gain:
+                Using Clojure for Web Applications</a>, Video on <a rel="noreferrer"
+                href="https://www.youtube.com/watch?v=dzGuaO38XDw" target="_blank">YouTube</a></li>
+            <li>2019/10 - People + Tech Düsseldorf Meetup: <a rel="noreferrer"
+                href="https://tbsschroeder.github.io/dive-deep-into-argumentation-theory/#/">Dive Deep into
+                Argumentation Theory</a></li>
+            <li>2019/04 - People + Tech Düsseldorf Meetup: <a rel="noreferrer"
+                href="https://tbsschroeder.github.io/about-the-efficency-of-online-discussions" target="_blank">About
+                the Efficency of Online Discussions</a></li>
+            <li>2018/10 - Code.Talks Hamburg: <a rel="noreferrer"
+                href="https://tbsschroeder.github.io/dive-deep-into-argumentation-theory/#/">Dive Deep into
+                Argumentation Theory</a></li>
+          </ul>
+        </div>
+        <div class="col-6" data-aos="fade-left">
+          <h5>Academia</h5>
+          <ul>
+            <li>
+              2018/08 - 7th International Conference on Computational Models of Argument (<a rel="noreferrer"
+                href="http://comma2018.argdiap.pl/" target="_blank">COMMA 2018</a>): <a
+                href="/public/2017_09_gummersbach.pdf" target="_blank">Dialog-Based Online Argumentation</a>
+            </li>
+            <li>
+              2017/11 - Advances In Argumentation In Artificial Intelligence (<a rel="noreferrer"
+                href="http://aiia2017.di.uniba.it/ai3-2017/" target="_blank">AI&#179; 2017</a>): <a
+                href="/public/2017_11_bari_ai3.pdf" target="_blank">Dialog-Based Online Argumentation: Findings from
+                a
+                Field Experiment</a>
+            </li>
+            <li>
+              2017/09 - New ideas for citizen’s involvement on a local level (<a rel="noreferrer"
+                href="https://www.freiheit.org/buero/theodor-heuss-akademie" _target="blank">Theodor-Heuss-Akademie
+                der Friedrich-Naumann-Stiftung für die Freiheit</a>):
+              <a href="/public/2018_09_warschau_comma18.pdf" target="_blank">New ideas for citizens’ involvement on
+                local level Perspectives of Open Government in Germany</a>
+            </li>
+            <li>
+              2016/09 - 6th International Conference on Computational Models of Argument (<a rel="noreferrer"
+                href="http://www.ling.uni-potsdam.de/comma2016/" target="_blank">COMMA 2016</a>): <a
+                href="/public/2016_09_potsdam_comma16.pdf" target="_blank">Dialog-Based Online Argumentation</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -406,7 +430,7 @@
         <h2 class="text-center">Skills</h2>
         <div class="content">
           <div class="col-12 text-center" data-aos="fade-up">
-            <h5>Trainer
+            <h5>Trainer for
               <span style="padding-left:1em;"><i class="fa fa-microphone text-success"></i>
                 Agile Leadership Principles</span>
               <span style="padding-left:1em;"><i class="fa fa-microphone text-success"></i>
@@ -561,10 +585,11 @@
 
   <div id="certifications" class="container white-bg" data-aos="fade-up">
     <div class="row justify-content-center">
-      <div class="col-12">
-        <h2 class="text-center">Certifications</h2>
-        <div class="content">
-
+      <div class="row">
+        <div class="col-12">
+          <h2 class="text-center">Certifications</h2>
+        </div>
+        <div class="col-6" data-aos="fade-right">
           <ul class="fa-ul">
             <li>
               <i class="fa-li fa fa-trophy text-warning"></i>
@@ -591,6 +616,10 @@
               <i class="fa-li fa fa-trophy text-warning"></i>
               Gute wissenschaftliche Praxis (University of Düsseldorf, 2015)
             </li>
+          </ul>
+        </div>
+        <div class="col-6" data-aos="fade-left">
+          <ul class="fa-ul">
             <li>
               <i class="fa-li fa fa-trophy text-warning"></i>
               Seminar zum Themenbereich Karriere und Persönlichkeit (University of Düsseldorf, 2013)
@@ -617,6 +646,7 @@
     </div>
   </div>
 
+  </div>
 
   <script src="vendor/js/vendor.min.js"></script>
   <script src="vendor/js/main.min.js"></script>
